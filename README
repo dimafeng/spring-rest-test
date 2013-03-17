@@ -1,4 +1,7 @@
 The simple project which uses spring mvc for building REST service
 
 Uses technology:
-*Spring MVC
+* Spring MVC
+* AngularJS
+* Spring Data
+* Hibernate
