@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js"></script>
+    <script src="/js/controllers.js"></script>
+    <style type="text/css" rel="stylesheet" href="/css/style.css"></style>
+</head>
+<body ng-controller="UserListCtrl">
+
+    <ul>
+        <li ng-repeat="user in users">
+            id: {{user.id}} - username: {{user.username}}
+        </li>
+    </ul>
+
+    <form ng-submit="addUser()">
+        <input type="text" ng-model="username"  size="30"
+                       placeholder="add new username here">
+        <input type="submit" value="add">
+    </form>
+</body>
+</html>
