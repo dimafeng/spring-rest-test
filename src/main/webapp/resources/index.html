@@ -10,7 +10,7 @@
 
     <ul>
         <li ng-repeat="user in users">
-            id: {{user.id}} - username: {{user.username}}
+            id: {{user.id}} - username: {{user.username}} <div ng-click="remove(user.id)">remove</div></li>
         </li>
     </ul>
 
